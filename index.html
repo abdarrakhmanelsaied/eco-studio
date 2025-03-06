@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Studio Minimalism</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header class="container header-full">
+    <div class="logo">Eco Studio</div>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#benefits">Why Choose Us</a>
+        <a href="#reviews">Client Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" style="background-image: url('images/hero.webp');">
+    <h1><span class="hero-text-bg">Minimalism and Eco-Friendliness in Every Interior</span></h1>
+    <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Get Consultation</button>
+</section>
+
+<section id="about" class="container" data-aos="fade-up">
+    <div class="about-content">
+        <img src="images/about.jpeg" alt="About Us" class="small-img">
+        <div class="about-text">
+            <h2>About Our Studio</h2>
+            <p>
+                We create harmonious, minimalist, and eco-friendly spaces that inspire, help you relax, and fill you with energy. Using only eco-friendly materials and innovative solutions, our team of professional designers approaches each project individually, considering your lifestyle and personal preferences. We are convinced that minimalism is a way of life that emphasizes your uniqueness and reflects respect for nature. We guarantee attention to detail and full support for your project from the sketch to the final design of your dream interior.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="container cards-row">
+    <div class="card">
+        <img src="images/service1.jpg" alt="Residential Interiors">
+        <p>Residential Interiors</p>
+    </div>
+    <div class="card">
+        <img src="images/service2.jpg" alt="Office Spaces">
+        <p>Office Spaces</p>
+    </div>
+    <div class="card">
+        <img src="images/service3.jpg" alt="Public Interiors">
+        <p>Public Interiors</p>
+    </div>
+</section>
+
+<section id="benefits" class="container">
+    <h2>Why Choose Us</h2>
+    <p>Our interior design studio combines professionalism, creativity, and environmental awareness. A personalized approach, attention to detail, eco-friendly materials, and on-time delivery are just a few of the advantages that make us special. We guarantee full support for the project, from the initial sketch to the final design of your dream interior. With us, your space will reflect your character and lifestyle. Our goal is to create an interior that is not only beautiful but also full of meaning and energy, improving the quality of life for each client.</p>
+</section>
+
+<section id="reviews" class="container">
+    <h2>Client Reviews</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">"Working with the team was very pleasant, they quickly understood our wishes and turned our dream into reality." – Alexey</div>
+            <div class="swiper-slide">"We are very happy with the eco-friendly approach and attention to detail." – Julia</div>
+            <div class="swiper-slide">"The best design we've had. Professional and on time!" — Dmitry</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section id="contact" class="container">
+    <h2>Leave a Request</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="cta">Submit</button>
+    </form>
+</section>
+
+<footer class="container header-full">
+    <p>© 2025 Eco Interior Design Studio</p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    AOS.init();
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: { delay: 3000 },
+        effect: 'fade',
+        pagination: { el: '.swiper-pagination', clickable: true },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    height: 80vh;
+    background: url('your-image.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cta {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-bg {
+    background-color: rgba(245, 245, 220, 0.7);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.cta {
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.small-img {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.cards-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cards-row .card {
+    flex: 1;
+}
+
+.cards-row .card img {
+    width: 100%;
+    height: auto;
+}
+
+.header-full {
+    width: 100%;
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer .social-icons {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta, button[type="submit"] {
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.cta:hover, button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.hero-text-bg {
+    background-color: rgba(245, 245, 220, 0.7);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cards-row .card img {
+    width: 100%;
+    height: auto;
+}
+
+.cards-row {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.card {
+    flex: 1;
+}
+
+/* Section "About Us" with text on the right of the image */
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about .about-text {
+    width: 50%;
+    text-align: left; /* Text aligned to the left */
+}
+
+#about .about-text h2 {
+    text-align: left; /* Heading also left-aligned */
+}
+
+#about .about-text p {
+    text-align: left; /* Text also left-aligned */
+}
+
+#about .about-content img {
+    width: 45%;
+    margin-left: 20px;
+}
+
+/* Margin between the main image and the "About Us" section */
+.hero {
+    margin-bottom: 60px;
+}
+
+/* Margin between "About Us" and "Our Services" section */
+#about {
+    margin-bottom: 60px;
+}
+
+/* Margin between "Our Services" and "Why Choose Us" section */
+#services {
+    margin-bottom: 60px;
+}
+
+/* Margin between "Why Choose Us" and "Client Reviews" section */
+#benefits {
+    margin-bottom: 60px;
+}
+
+/* Fixed header position on scroll */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7; /* Background color for readability */
+    z-index: 1000; /* High z-index to keep header on top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for highlighting */
+    padding: 20px 0; /* Padding at the top and bottom */
+}
+
+/* Add padding to the body to prevent content from hiding behind the header */
+body {
+    padding-top: 80px; /* Adjust based on your header height */
+}
